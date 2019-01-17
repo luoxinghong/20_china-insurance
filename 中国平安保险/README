@@ -1,0 +1,9 @@
+①要爬取的主页地址  http://www.pingan.com/official/insurance
+
+②使用的requests
+
+③按【健康险，意外险，寿险，旅游险，财产险】分类爬取各保险详情页的HTML，及里面的pdf文件
+
+
+
+

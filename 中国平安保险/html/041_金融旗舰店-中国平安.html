@@ -1,0 +1,879 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>金融旗舰店-中国平安</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var member_url = "https://member.pingan.com.cn";
+	var daikuanHost =  "";
+	var js_emall_url = "http://chaoshi.pingan.com";
+	var current_url = window.location.href;
+	if(current_url.indexOf("emall_maoji")!=-1){
+		current_url = current_url.replace("?emall_maoji=","#");
+		current_url = current_url.replace("&emall_maoji=","#");
+		window.location.href=current_url;
+	}
+	var emallDomain = "chaoshi.pingan.com";
+	var hj ="";
+	var protocol = "";
+	if(null !=hj && 'feibiao'==hj){
+		protocol = window.location.protocol +"//"+ emallDomain + ".cn";
+	} else {
+		protocol = window.location.protocol +"//"+ emallDomain;
+	}
+	if(window.location.port) {
+		protocol += ":" + window.location.port;
+	}
+	var customerProtocol = window.location.protocol;
+	if(!protocol) {
+		if(customerProtocol == "file:") {
+			customerProtocol = "http:";
+		}
+		protocol = customerProtocol + "//chaoshi.pingan.com";
+	}
+	document.write('<link rel="stylesheet" href="'+protocol+'/app_css/pingan/v40/css/index.css" />');
+	document.write('<link rel="stylesheet" href="'+protocol+'/app_css/pingan/v40/css/header.css" />');
+	document.write('<link rel="stylesheet" href="'+protocol+'/css/global_baoxianDetail.css?v=141125" />');
+	document.write('<link type="text/css" href="'+protocol+'/app_css/pingan/v40/css/header.css" rel="stylesheet" />');
+	document.write('<link rel="stylesheet" href="'+protocol+'/app_css/pingan/v20/new_foot/footer.css" />');
+	document.write('<link rel="stylesheet" href="'+protocol+'/app_css/pingan/v40/css/flagship_store.css" />');
+	document.write('<link rel="stylesheet" href="'+protocol+'/app_css/pingan/v40/css/public.css" />');
+	document.write('<meta http-equiv="Cache-Control" content="no-transform " />');
+	document.write('<meta http-equiv="Cache-Control" content="no-siteapp" />');
+</script>
+<script type="text/javascript">
+	document.write('<script type="text/javascript" src="'+protocol+'/app_js/pingan/v40/lib/jquery-1.11.2.min.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="'+protocol+'/app_js/pingan/v40/js/addFloatIcons.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="'+customerProtocol+'//resources.pingan.com.cn/app_js/paui/1.1.0/build/pa.ui.min.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="'+protocol+'/app_js/pingan/v40/js/iCookie.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="'+protocol+'/js/public.js"><'+'/script>');
+	document.write('<script type="text/javascript" src="'+protocol+'/app_js/pingan/v10/newemll/call_yzt.js"><'+'/script>');
+</script>
+
+
+
+
+
+
+<input type="hidden" id="emallJijinUrl" value='http://chaoshi.pingan.com'/>
+<input type="hidden" id="chaoshiUrl" value='http://chaoshi.pingan.com/'/>
+<input type="hidden" id="typeWord" value="">
+<div class="nav_header"></div>
+<div id="header">
+	<div class="bar">
+	  	<div class="top_bar">
+		    <div class="fl">
+			    <a href="javascript:favorite('中国平安保险（集团）股份有限公司-保险、银行、投资','http://www.pingan.com')">收藏本站</a>
+			    <span>|</span>
+			    <a href="http://www.pingan.com/wap/index.jsp" target="_blank">移动平安网</a>
+			    <span>|</span>
+			    <a href="http://weibo.com/pingan" target="_blank">官方微博</a>
+	    	</div>
+	    	<div id="not_login" class="fr">
+		      	<a href="javascript:void(0);" id="loginPop">登录</a>
+		      	<span>|</span>
+		      	<a href="javascript:void(0);" id="registerPop">快速注册</a>
+		      	<span>|</span>
+		      	<a href="javascript:void(0);" id="myorder">我的订单</a>
+		      	<span>|</span>
+		      	<a href="javascript:void(0);" id="favorite">收藏夹</a>
+		    </div>
+		    <div id="is_login" class="fr account_info" style="display:none;">
+		    	<div style="float:left"><span id="memberNickName"></span><span class="male" id="memberMale"></span>，欢迎您！</div>
+		    	<a otitle="我的订单" otype="button" target="_blank" rel="nofollow" href="http://chaoshi.pingan.com/dingdanguanli/jinrongchaoshi/index.shtml">我的订单</a>
+		    	<i id="orderNum">0</i>
+		    	
+		    	<span>｜</span>
+		    	<a otitle="收藏夹" otype="button" target="_blank" class="clone_b" href="http://chaoshi.pingan.com/dingdaguanli/jinrongchaoshi/collects.shtml">收藏夹</a>
+			   	<span>｜</span>
+		    	<a href="javascript:void(0);" id="header_logout" otitle="首页-顶部导航-退出" otype="button">退出</a>
+		    </div>
+	  	</div>
+	</div>  	
+  	<div class="header">
+  		<div class="header_box">
+			<span class="logo">
+				<a href="http://www.pingan.com" target="_blank" class="pa_link"></a>
+				<a target="_blank" href="http://fmall.pingan.com" class="cs_link"></a>
+			</span>
+			<div class="fr w450 mt_20">
+				<div class="search">
+					<input type="text" name="keyword" id="searchKeyValue" 
+					
+						value='请输入关键字'
+					
+					
+					onkeydown="if(event && event.keyCode==13){search();}" onfocus=" if(this.value=='请输入关键字'){this.value=''; this.style.color='#ABA9A9';} " onblur="if(this.value==''|| this.value=='请输入关键字'){this.value='请输入关键字';}" maxlength="20" style="color: rgb(171, 169, 169);">
+					<input type="hidden" id="searchType" value="1"/>
+					<div class="se_button" id="search_index">搜索</div>
+				</div>
+				<dl class="hot_search">
+					<dt>热搜：</dt>
+					<dd>
+						<!-- <a href="http://jijin.pingan.com/jijin/active.shtml?intcmp=gw_qjd_ssk&source=myjj_gw_ssk" target="_blank" style="color: #F60;">基金申购费全免</a>&nbsp;
+						 -->
+						 <a href="http://insurance.pingan.com/list/lvyouxian/index.shtml?WT.mc_id=hd-qjd-rs&source=hd-qjd-rs" target="_blank" style="color: #F60;" operation-sid="57">旅游险优惠20%</a>&nbsp;
+						 <a href="http://daikuan.pingan.com/daikuan/xinyidai.shtml?source=daikuanpindaosy-resou" target="_blank" style="color: #F60;" operation-sid="57">信用可贷50万</a>&nbsp;
+						
+<!-- 						<a href="http://www.pingan.com/huodong/qjd/cjqmp/index.shtml?intcmp=gwpc-sy-skin-qmp008" target="_blank" style="color: #F60;">平安好球</a>&nbsp;
+ -->					</dd>
+					<dd id="hotSearch"></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+   <div class="nav">
+	  	<ul>
+	    	<li class="sy"><a href="http://fmall.pingan.com" otype="menu" otitle="旗舰店主导航-首页" class="qjd_sy" target="_blank" operation-sid="56"> 首页</a></li>
+	    	<li class="bx"> <a href="http://insurance.pingan.com/" otype="menu" otitle="旗舰店主导航-保险" class="qjd_bx" target="_blank" operation-sid="56">保险</a>
+	    		<div class="nav_box baoxian">
+						<span class="nav_arrow"></span>
+ 						<dl>
+				    	<dt>快捷入口</dt> 
+				    	<dd noWrap="nowrap"> 
+				    		<span><a target="_blank" href="http://insurance.pingan.com/list/chexian/index.shtml" otype="menu" otitle="车险">车险</a><b>|</b></span> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/lvyouxian/index.shtml" otype="menu" otitle="旅游险">旅游险</a><b>|</b></span> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/shaoerxian/index.shtml" otype="menu" otitle="少儿险">少儿险</a><b>|</b></span> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/yiwaixian/index.shtml" otype="menu" otitle="意外险">意外险</a><b>|</b></span>
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/caichanxian/index.shtml" otype="menu" otitle="财产险">财产险</a><b>|</b></span> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/jiankangxian/index.shtml" otype="menu" otitle="健康险">健康险</a><b>|</b></span>
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/yanglaolicai/index.shtml" otype="menu" otitle="养老理财">养老理财</a><b>|</b></span>
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/baiwanxilie/index.shtml" otype="menu" otitle="百万系列">百万保障</a>
+ 				    		</span>
+ 				    		<!--<span><a target="_blank" href="http://fmall.pingan.com/huodong/haoyisheng" otype="menu" otitle="一账通导航栏-健康卡">健康卡</a></span>-->
+				    	</dd>  
+ 				    </dl> 
+				    <dl> 
+ 				    	<dt>热门标签</dt> 
+ 				    	<dd noWrap="nowrap"> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/yiwaixian/index.shtml#0000000448" otype="menu" otitle="出行交通">出行交通</a><b>|</b></span>
+				    		<span><a target="_blank" href="http://insurance.pingan.com/list/yanglaolicai/index.shtml#0000000404" otype="menu" otitle="万能险">万能险</a><b>|</b></span> 
+ 				    		<span><a target="_blank" href="http://insurance.pingan.com/list/yiwaixian/index.shtml#0000000449" otype="menu" otitle="综合意外">综合意外</a><b>|</b></span> 
+				    		<span><a target="_blank" href="http://insurance.pingan.com/list/shaoerxian/index.shtml#0000000123" otype="menu" otitle="教育储蓄">教育储蓄</a><b>|</b></span>
+				    		<span><a target="_blank" href="http://insurance.pingan.com/list/jiankangxian/index.shtml#0000000453" otype="menu" otitle="重大疾病">重大疾病</a></span>
+			    		
+				    	</dd> 
+ 				    </dl>			    	
+					</dl>
+				</div>	
+	    	</li>
+	    	<!-- 临时隐藏 2017-11-17 -->
+	    	<li class="lc" style="display:none;">
+	    		<a href="http://licai.pingan.com" otype="menu" otitle="旗舰店主导航-理财" class="qjd_licai" target="_blank" operation-sid="56">理财</a>
+  				<div class="nav_box licai">
+						<span class="nav_arrow"></span>
+ 						<dl>
+
+<!-- 				    	<dd noWrap="nowrap"> -->
+
+
+
+
+
+<!-- 				    	</dd>  -->
+<!-- 				    </dl> -->
+<!-- 				    <dl> -->
+
+<!-- 				    	<dd noWrap="nowrap"> -->
+
+
+
+
+<!-- 				    	</dd> -->
+<!-- 				    </dl> -->
+<!-- 				    <dl> -->
+<!-- 				    	<dt>任性理财</dt> -->
+<!-- 				    	<dd noWrap="nowrap" id="yqbmenulist"> -->
+<!-- 				    	</dd> -->
+<!-- 				    </dl> -->
+<!-- 				    <dl> -->
+			    	<dd noWrap="nowrap" class="w_370">
+						<span><a target="_blank" href="http://licai.pingan.com/" otype="menu" otitle="旗舰店主导航-理财产品-理财首页">理财首页</a><b></b></span>
+						<span><a target="_blank" href="http://licai.pingan.com/licai.shtml?templateType=yinHangLiCai" otype="menu" otitle="旗舰店主导航-理财产品-银行理财">银行理财</a><b>|</b></span>
+						<span><a target="_blank" href="http://licai.pingan.com/licai.shtml?templateType=dingQiLiCai" otype="menu" otitle="旗舰店主导航-理财产品-定期理财">定期理财</a><b>|</b></span>
+						<span><a target="_blank" href="http://licai.pingan.com/licai.shtml?templateType=huoQiLiCai" otype="menu" otitle="旗舰店主导航-理财产品-活期理财">活期理财</a><b>|</b></span>
+						<span><a target="_blank" href="http://licai.pingan.com/licai.shtml?templateType=xinShouLiCai" otype="menu" otitle="旗舰店主导航-理财产品-新手理财">新手理财</a><b></b></span>
+					</dd>
+					</dl>
+				</div>	
+	    	</li>
+
+	    	<!-- 临时隐藏 2017-11-17 -->
+			<li class="tz" style="display:none;">
+				<a href="http://touzi.pingan.com" otype="menu" otitle="旗舰店主导航-投资" target="_blank" class="qjd_touzi" operation-sid="56">投资</a>
+				<div class="nav_box touzi w_378">
+					<span class="nav_arrow"></span>
+					<dl>
+
+<!-- 						<dd noWrap="nowrap" class="w_296"> -->
+</span>
+</span>
+</span>
+</span>
+</span>
+</span>
+<!-- 						</dd> -->
+						<dt><a href="http://touzi.pingan.com" otype="menu" otitle="旗舰店主导航-投资产品" target="_blank">投资首页</a></dt>
+						<dd noWrap="nowrap" class="w_296">
+							<span><a target="_blank" href="http://touzi.pingan.com/touzi/ljsProductList.shtml" otype="menu" otitle="旗舰店主导航-投资产品-陆金所">陆金所</a><b>|</b></span>
+							
+							<span><a target="_blank" href="http://touzi.pingan.com/touzi/xtzgProductList.shtml" otype="menu" otitle="旗舰店主导航-投资产品-信托">信托和资管</a><b>|</b> </span>
+							<span><a target="_blank" href="http://touzi.pingan.com/touzi/ygsmProductList.shtml" otype="menu" otitle="旗舰店主导航-投资产品-阳光私募">阳光私募</a><b>|</b></span>
+							<span><a target="_blank" href="http://touzi.pingan.com/touzi/hfzcProductList.shtml" otype="menu" otitle="旗舰店主导航-投资产品-好房众筹">好房众筹</a><b>|</b></span>
+							<span><a target="_blank" href="http://licai.pingan.com/newXinTuoList.shtml" otype="menu" otitle="旗舰店主导航-投资产品-好房众筹">一账通“快赚”系列</a></span>
+						</dd>
+					</dl>
+				</div>
+			</li>
+	    	<!-- 临时隐藏 2017-11-17 -->
+			<li class="jj" style="display:none;">
+				<a href="http://jijin.pingan.com" otype="menu" otitle="旗舰店主导航-基金" class="qjd_jj" target="_blank" operation-sid="56">基金</a>
+				<div class="nav_box jijin" style="width: 255px;">
+					<span class="nav_arrow"></span>
+					<dl>
+						<dt><a href="http://jijin.pingan.com" otype="menu" otitle="旗舰店主导航-基金首页" target="_blank">基金首页</a></dt>
+						<dd noWrap="nowrap" class="w_254" style="width:160px;">
+							<span><a target="_blank" href="http://jijin.pingan.com/jijin/risk.shtml" otype="menu" otitle="旗舰店主导航-投资产品-票据">风险测评</a><b>|</b></span>
+							<span><a target="_blank" href="http://jijin.pingan.com/jijin/jijinHelper.shtml" otype="menu" otitle="旗舰店主导航-投资产品-信托">选基小助手</a></a></span>
+						</dd>
+					</dl>
+				</div>
+			</li>
+	    	<li class="dk">
+	    		<a href="http://daikuan.pingan.com" type="menu" otitle="旗舰店主导航-贷款" target="_blank" class="qjd_daikuan" operation-sid="56">贷款</a>
+	    		<div class="nav_box daikuan">
+						<span class="nav_arrow"></span>
+						<dl>
+				    	<dt><a href="http://daikuan.pingan.com" otype="menu" otitle="旗舰店主导航-贷款产品">贷款产品</a></dt>
+				    	<dd noWrap="nowrap"><a target="_blank" href="http://daikuan.pingan.com/daikuan/xinyidai.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-新一贷">新一贷</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/chedidai.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-车抵贷">车抵贷</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/jingying.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-经营贷款">经营贷款</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/xiaoxiao.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-小额消费贷款">小额消费贷款</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/xinche.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-新车贷款">新车贷款</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/qichedaikuan/ershou.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-二手车贷款">二手车贷款</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/yingjiqianbao.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-应急钱包">应急钱包</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/yidai.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-平安易贷">平安易贷</a><b>|</b></span>
+				    			<span><a target="_blank" href="http://daikuan.pingan.com/daikuan/zhaiedai.shtml" otype="menu" otitle="旗舰店主导航-贷款产品-万能房抵贷">万能房抵贷</a></span>
+				    	</dd>
+				    </dl>
+				</div>
+	    	</li>
+	    	<li class="xyk"> 
+	    		<a href="http://chaoshi.pingan.com/xinyongka.shtml" type="menu" otitle="旗舰店主导航-信用卡" target="_blank" class="qjd_xyk" operation-sid="56">信用卡</a>
+	    		<div class="nav_box xinyongka" style="width:260px;">
+						<span class="nav_arrow"></span>
+						<dl>
+				    	
+				    	<dd noWrap="nowrap">
+				    			<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=3a1a2a4a5a8a9a10a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-车主信用卡">车主信用卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=1a2a3a4a5a8a9a10a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-标准卡">标准卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=12a1a2a3a4a5a8a9a10a11a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-香港旅游卡">香港旅游卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=10a1a2a3a4a5a8a9a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-中国旅游信用卡">中国旅游信用卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=11a1a2a3a4a5a8a9a10a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-1号店联名卡">1号店联名卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=2a1a3a4a5a8a9a10a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-BE@RBRICK时尚卡">BE@RBRICK时尚卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=8a1a2a3a4a5a9a10a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-淘宝联名卡">淘宝联名卡</a><b>|</b></span>
+								<span><a target="_blank" href="https://c.pingan.com/apply/public/newApplyCard.do?scc=900000041&ccp=5a1a2a3a4a8a9a10a11a12a13&show=0" otype="menu" otitle="旗舰店主导航-信用卡-携程商旅卡">携程商旅卡</a></span>
+				    	</dd>
+				    </dl>
+				</div>
+	    	</li>
+	  	</ul>
+  </div>
+</div>
+
+
+
+<iframe name="logoutiframe" id="logoutiframe" style="display:none;"></iframe>
+<form id="logoutform" target="logoutiframe" action="" method="post" style="display:none;"></form>
+<div id="new_shadow" class="logShadow"></div>
+<div id="login_backshadow" class="login_backshadow"></div>
+<div class="login_shadow" id="login_shadow" style="display: none;">
+	<div class="login_box" id="login_box" style="display: none;">
+	<div style="height:36px;padding-left:4px;">
+		<h5 class="loginPageTitle" id="loginPopTitle" style="float:left;">立即登录，体验一账通新服务！</h5>
+		<span id="header_exit" class="fr pop_box_close" style="float:right;"><img width="14" height="14" src="http://chaoshi.pingan.com/images/pop_close.png"></span>
+	</div>
+	<div class="loginDes">
+		登录账号包括： 已验证的Email/手机号码、自设用户名和原一账通用户名！<a href="javascript:void(0)" id="header_register" style="text-decoration: none;background: #E24800;color:#ffffff; padding:2px 5px;">立即免费注册</a>
+	</div>
+	<iframe id="loginiframe" src="" allowtransparency="true" width="600" height="440" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+	</div>	
+</div>
+<script type="text/javascript">
+var currentChannelType = "";
+function setHoverHeader(type){
+	currentChannelType = type;
+	$(".nav li a").removeClass("on");
+	$(".nav ."+type+" > a").addClass("on");
+}
+$(".qjd_licai,.nav_box.licai").hover(
+	function(event){			
+		$(".nav_box.licai").show();				
+	},
+	function(event){
+		$(".nav_box.licai").hide();	
+	}
+);
+$(".qjd_daikuan,.nav_box.daikuan").hover(
+	function(event){
+		$(".nav_box.daikuan").show();
+	},
+	function(event){
+		$(".nav_box.daikuan").hide();
+	}
+);
+$(".qjd_xyk,.nav_box.xinyongka").hover(
+		function(event){
+			$(".nav_box.xinyongka").show();
+		},
+		function(event){
+			$(".nav_box.xinyongka").hide();
+		}
+	);
+$(".qjd_touzi,.nav_box.touzi").hover(
+		function(event){
+			$(".nav_box.touzi").show();
+		},
+		function(event){
+			$(".nav_box.touzi").hide();
+		}
+	);
+$(".qjd_jj,.nav_box.jijin").hover(
+		function(event){
+			$(".nav_box.jijin").show();
+		},
+		function(event){
+			$(".nav_box.jijin").hide();
+		}
+	);
+
+$(".qjd_bx,.nav_box.baoxian").hover(
+		function(event){
+			$(".nav_box.baoxian").show();
+		},
+		function(event){
+			$(".nav_box.baoxian").hide();
+		}
+	);
+	
+$("#loginPop,#myorder,#favorite").bind("click",function(event){
+	loginPop(true,'',false);
+});
+$("#registerPop").bind("click",function(event){
+	registerPop(true);
+});
+$("#header_exit").bind("click",function(event){
+	loginPop(false);
+});
+$("#search_index").bind("click",function(event){
+	search();
+});
+$("#header_logout").bind('click',function(event){
+	logout();
+	setCookie("sessionId","",0);
+	//getCookie("sessionId");
+	//delCookie("sessionId");
+   	if(location.href.indexOf('.pingan.com.cn')) {
+   		document.cookie = "sessionId=0;expires=" + new Date("1900/1/1 0:0:0").toGMTString() + ";domain=.pingan.com.cn;path=/";
+   	} else {
+   		document.cookie = "sessionId=0;expires=" + new Date("1900/1/1 0:0:0").toGMTString() + ";domain=.pingan.com;path=/";
+   	}
+});
+$("#header_register").bind('click',function(event){
+	loginPop(false);
+	registerPop(true);
+});
+$(function(){
+	var str="";
+	$.ajax({
+		url:protocol+"/newheader.do",
+		dataType:"jsonp",
+		dataType:"jsonp",
+		success:function(json){
+			var list = json.hotSearchList;
+			for(var i=0;i<list.length;i++) {
+				str+='<a href="'+protocol+'/changeProductDetail.shtml?pId='+list[i].productID+'" target="_blank" style="color: #F60;" operation-sid="57">'+list[i].keyWordInfo+'</a>';
+				if(list.length-1!=i){
+					str+='<span>|</span>';
+				}
+			}
+			$("#hotSearch").html(str);
+            $(document).trigger('pa-operation-source');
+		},
+		error:function(){
+		}
+	});
+});
+function addDirectBuyBtn(obj,url){
+		var html =""+
+			'<div class="mainleft" style="">'+	
+				'<span class="kstb">快速投保，马上来体验吧！</span>'+
+				'<a href='+url+' class="directBuy">不登录，直接购买 ></a>'+
+			'</div>	'+
+			'<div style="clear:both;"></div>';
+			obj.append(html);
+	}	
+//登录
+//  loginPop(true,false,false,"10022")
+function loginPop(state,goUrl,isDirectBuy,customerAppid){
+	var appid=getLoginSwitchAppid();
+	if(customerAppid) {
+		appid = customerAppid;
+	}
+	if(state === undefined){
+		state = true;
+	}
+	if(state){
+		$('#login_backshadow').height($(document).height()).show();		
+		
+		var contentHeight = $(window).height();	
+		$('#login_shadow').css('top',(getScrollTop() + (contentHeight - $('#login_shadow').height())/2+4) + 'px');
+		$('#login_box').css('top', '5px');
+
+		var returnUrl = window.location.href;
+		var reg=/;jsessionid=.*\?/;
+		returnUrl = returnUrl.replace(reg,"?");
+		if(returnUrl.indexOf("#pjBtn") != -1) {
+			returnUrl = returnUrl.replace("#pjBtn","");
+			if(returnUrl.indexOf("?")==-1) {
+				returnUrl+="?";
+			} else {
+				returnUrl+="&";
+			}
+			returnUrl+="pjBtn=pjBtn";
+		}
+		if(goUrl){
+			returnUrl = goUrl;
+		}
+		returnUrl = decodeURI(returnUrl);
+		returnUrl = encodeURIComponent(returnUrl,"utf-8");
+		
+		
+		$('#login_box, #login_shadow').show(); 
+		$('#loginiframe').attr('src', protocol+'/common/loginToaMember.do?appid='+appid+'&_=' + new Date().getTime()+'&ptag='+returnUrl);
+		if(isDirectBuy){
+			returnUrl = decodeURIComponent(returnUrl, "utf-8");
+			var ww = $(window).width(),lw= $('#login_box').width();
+			
+			$('#login_box').css("padding","18px 15px 0px 252px");
+			$('#login_shadow').css("left",ww/2-464);
+			$('#login_shadow').css("width","877px");
+			$('#login_shadow').css("margin-left",0);
+			addDirectBuyBtn($('#login_box'),returnUrl + '&avoidLogin=avoidLogin');
+		}else{
+			var ww = $(window).width(),lw= $('#login_box').width();
+			$('#login_box').css("padding","18px 15px 0 15px");
+			$('#login_box').css("left","5px");
+			$('#login_shadow').css("width","640px");
+			$('#login_shadow').css("left",(ww/2-315)+"px");
+			$('.mainleft').hide();
+		}
+		
+	}else{
+		$('#login_backshadow, #login_box, #login_shadow').hide();
+		$('#loginiframe').attr('src', '');
+	}
+	
+}
+function getScrollTop() {
+	try {
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	} catch(e) {
+	}
+	return scrollTop;
+}
+//注册
+//registerPop(true,false,"10022")
+function registerPop(state,goUrl,customerAppid){
+	var appid=getRegesterSwitchAppid();
+	if(customerAppid) {
+		appid = customerAppid;
+	}
+     if(state === undefined){
+         state = true;
+     }
+       
+     if(state){
+		var returnUrl = window.location.href;
+		if(goUrl) {
+			returnUrl = goUrl;
+		}
+		returnUrl = decodeURI(returnUrl);
+		returnUrl = encodeURIComponent(returnUrl,"utf-8");
+		
+		window.open(protocol+'/common/activeMemberFromMobileUser.do?appid='+appid+'&_=' + new Date().getTime()+'&quickRedirect=true&ptag='+returnUrl,'toaWin','scrollbars=yes,status=yes,resizable=yes,top=0,left=0,width='+(screen.availWidth-10)+',height='+(screen.availHeight-45));
+		
+	}else{
+		$('#regist_backshadow, #regist_box, #regist_shadow').hide();
+		$('#registerframe').attr('src', '');
+	}   
+   
+}
+//注册
+//其他
+function noticePop(state){
+	if(state === undefined){
+        state = true;
+    }
+      
+    if(state){
+		$('#regist_backshadow').height($(document).height()).show();
+		var contentHeight = $(window).height();	
+		$('#notice_shadow').css('top',(getScrollTop() + (contentHeight - $('#notice_shadow').height())/2) + 'px');
+		$('#notice_box').css('top',(getScrollTop() + (contentHeight - $('#notice_box').height())/2-10) + 'px');
+		$('#notice_box, #notice_shadow').show();
+	}else{
+		$('#regist_backshadow, #notice_box, #notice_shadow').hide();
+	}
+}
+
+function maskCodePop(state){
+	if(state === undefined){
+		state = true;
+	}
+	if(state){
+		//var scrollHeight = document.body.scrollHeight;
+		var contentHeight = $(window).height();
+		$('#maskCodeShadow').height($(document).height()).show();
+		$('#maskCodePop').css('top',(getScrollTop() + (contentHeight - $('#maskCodePop').height())/2) + 'px');		
+		$('#maskCodePop').show();
+	}else{
+		$('#maskCodePop').hide();
+		$('#maskCodeShadow').hide();
+	}
+}
+
+function setNickName(){
+	maskCodePop(false);				
+}
+
+//更新未完成订单数
+function upDataOrderNum() {
+	$.ajax({url: protocol+'/ajaxUpdateOrderNumController.do',
+		data:{			
+			randDate: new Date().getTime()
+		},
+		type: 'POST',
+		dataType: 'jsonp',
+		success:function(json){	
+			var obj = json.data;
+			if(obj != null && "" != obj && "0" != obj){
+				
+				$('#orderNum').addClass('b_ff6600');
+				$('#orderNum').text(obj.allCount);
+				if("0" !=obj.insuranceCount){
+					$('#orderBaoxian').addClass('b_ff6600');
+					$('#orderBaoxian').text(obj.insuranceCount);
+				}
+				/* if("0" !=obj.endowmentCount){
+					$('#orderYanglao').addClass('b_ff6600');
+					$('#orderYanglao').text(obj.endowmentCount);
+				}
+				if("0" !=obj.financeCount){
+					$('#orderBank').addClass('b_ff6600');
+					$('#orderBank').text(obj.financeCount);
+				}
+				if("0" !=obj.loanCount){
+					$('#orderDaikuan').addClass('b_ff6600');
+					$('#orderDaikuan').text(obj.loanCount);
+				}
+				if("0" !=obj.touziCount){
+					$('#orderTouzi').addClass('b_ff6600');
+					$('#orderTouzi').text(obj.touziCount);
+				}
+				if("0" !=obj.fundCount){
+					$('#orderJijin').addClass('b_ff6600');
+					$('#orderJijin').text(obj.fundCount);
+				} */
+			}
+			
+		}
+	});
+}
+//其他
+function setCookie(c_name, value, expiredays){
+　　　　var exdate=new Date();
+　　　　exdate.setDate(exdate.getDate() + expiredays);
+　　　　document.cookie=c_name+ "=" + escape(value) + ((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+　　}
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return (arr[2]);
+    else
+        return null;
+}
+function delCookie(name)
+{
+	var exp = new Date();
+	exp.setTime(exp.getTime() - 1);
+	var cval=getCookie(name);
+	if(cval!=null)
+	document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+
+function logout(){
+ 	//退出会员系统
+	$("#logoutform").attr('action', protocol+'/logout.jsp').submit();
+	setTimeout("location.href = location.href.replace('quickBuy=quickBuy','_=_')", 3000);
+ }
+ var isLogin = false;
+ 
+	function search(searchType,npage){
+		if(!searchType) {
+			searchType = $("#searchType").val();
+		}
+		var searchKeyValue = $("#searchKeyValue").val();
+		if(searchKeyValue == "请输入关键字" || !searchKeyValue) {
+			searchKeyValue = "";
+		}
+		var href=protocol+'/search.shtml?typeWord='+searchType+'&keyWord='+searchKeyValue;
+		if(npage) {
+			href += "&npage="+npage;
+		}
+		location.href=href;
+	}
+	var typeWord = $("#typeWord").val();
+	if(typeWord) {
+		$("#Pingan_all").html($("#search_opt_"+typeWord).html());
+		$("#searchType").val(typeWord);
+	}
+	$.ajax({
+		url:protocol+"/memberAlias.jsp",
+		dataType:"jsonp",
+		success:function(json){
+			if(json.isLoginEmall) {
+				$("#not_login").hide();
+				$("#memberNickName").html(json.memberNickName);
+				var sex = json.memberSex == "F" ? "女士":"先生"; 
+				$("#memberMale").html(sex);
+				$("#is_login").show();
+				upDataOrderNum();
+			} else {
+				setTimeout("ssoLogin()",500);
+			}
+		}
+	});
+	function ssoLogin(){
+		var appid = getDefaultAppId(); 
+		$("#loginsso").attr("src",protocol+'/common/loginToaMember.do?appid='+appid +"&ptag="+encodeURIComponent(window.location.href));
+	}
+	//添加到收藏夹
+	function favorite(title,url) {
+	    if (window.sidebar) {
+	        window.sidebar.addPanel(title, url,"");
+	    } else if( document.all ) {
+	        window.external.AddFavorite( url, title);
+	    } else if( window.opera && window.print ) {
+	        alert("添加收藏失败,请同时按\"Ctrl+D\"添加");
+			history.go(0);
+			return false;
+	    }
+		else
+		{
+			alert("添加收藏失败,请同时按\"Ctrl+D\"添加");
+	        return false;
+		}
+	}
+	function getLoginSwitchAppid(){
+		var host=location.host;
+		if(host.indexOf("licai")>=0) {
+			return "10155";
+		}else if(host.indexOf("touzi")>=0){
+			return "10154";
+		}else if(host.indexOf("insurance")>=0){
+			return "10157";
+		}else if(host.indexOf("jijin")>=0){
+			return "10153";
+		}else if(host.indexOf("daikuan")>=0){
+			return "10073";
+		}else{
+			return getDefaultAppId();
+	   }
+	}
+	function getRegesterSwitchAppid(){
+		var host=location.host;
+		if(host.indexOf("licai")>=0) {
+			return "10155";
+		}else if(host.indexOf("touzi")>=0){
+			return "10154";
+		}else if(host.indexOf("insurance")>=0){
+			return "10157";
+		}else if(host.indexOf("jijin")>=0){
+			return "10153";
+		}else if(host.indexOf("daikuan")>=0){
+			return "10073";
+		}else{
+			return getDefaultAppId();
+	   }
+	}
+// 		var html="";
+// 		$.ajax({
+// 		type:"get",
+// 		url:"/queryYqbMenuList.do",
+// 		dataType:"json",
+// 		success:function(data){
+// 			for(var i=0;i<data.length;i++)
+// 			{
+// 				var dataList = data[i].dataList;
+// 				for(var j = 0;j<dataList.length;j++)
+// 				{
+// 					html+="<span>";
+// 					if(j>0)
+// 					{
+// 						html+="<b>|</b>";
+// 					}
+// 					html+='<a target="_blank" href="http://licai.pingan.com/queryYqbController.do?productId='+dataList[j].productId+'" otype="menu" otitle="旗舰店主导航-壹钱包">'+dataList[j].productShortName+'</a>';
+// 					html+="</span>";
+// 				}
+// 			}
+// 			$("#yqbmenulist").html("");
+// 			$("#yqbmenulist").html(html);
+// 		}
+// 		});
+
+     //默认根据当前频道进行区分
+     function getDefaultAppId()
+     {
+    	return "10022";
+     }
+</script>
+<iframe id="loginsso" style="display:none;"></iframe>
+<div class="main">
+	<div class="bg_box">
+    	<span>
+        	<p>页面不见啦</p>
+            <p style="font-size:24px;">您访问的页面开小差呢</p>
+        </span>
+		<a href="http://chaoshi.pingan.com/" class="back_home">> 返回首页</a>
+    </div>
+</div>
+
+
+
+
+<div id="footer_v30_new_all"> 
+	<div id="footer">
+		<!--底部链接-->
+		<div class="foot c">
+			<div class="c_r">
+				<dl>
+					<dt class="fir">关于平安</dt>
+					<dd><a target="_blank" rel="nofollow" href="http://about.pingan.com/index.shtml" title="集团介绍" otitle="集团介绍" otype="button">集团介绍</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://ir.pingan.com/index.shtml?ptag=1" title="投资者关系" otitle="投资者关系" otype="button">投资者关系</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://job.pingan.com/" title="加盟平安" otitle="加盟平安" otype="button">加盟平安</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://www.pingan.com/homepage/contact/contact.jsp" title="联系我们" otitle="联系我们" otype="button">联系我们</a></dd>
+				</dl>
+				<dl class="no_margin">
+					<dt class="sec">企业社会责任</dt>
+					<dd><a target="_blank" rel="nofollow" href="http://about.pingan.com/qiyeshehuizeren/zerenbaogao.shtml" title="企业社会责任报告" otitle="企业社会责任报告" otype="button">企业社会责任报告</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://about.pingan.com/qiyeshehuizeren/huanjing.shtml" title="低碳100" otitle="低碳100" otype="button">低碳100</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://about.pingan.com/shehuizeren/gongyi/lizhijihua2013/index.shtml" title="励志计划" otitle="励志计划" otype="button">励志计划</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://about.pingan.com/paxw2012/index.shtml" title="支教行动" otitle="支教行动" otype="button">支教行动</a></dd>
+				</dl>
+				<dl>
+					<dt class="thr">帮助中心</dt>
+					<dd><a target="_blank" rel="nofollow" href="http://www.pingan.com/homepage/protocol.html" title="法律安全" otitle="法律安全" otype="button">法律安全</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://www.pingan.com/homepage/articlewebline.html" title="使用说明" otitle="使用说明" otype="button">使用说明</a></dd>
+					<dd><a target="_blank" href="http://eim.pingan.com.cn/web/one?v=&amp;businessType=ONE_2&amp;browserTpye=msie|8.0&amp;enterpage=&amp;urlAddr=http%3A%2F%2Fone.pingan.com%2Fbangzhu%2Fcontact_service.shtml" title="我要咨询" otitle="我要咨询" otype="button">我要咨询</a></dd>
+					<dd><a target="_blank" rel="nofollow" href="http://www.pingan.com/uxp/index.shtml" title="用户体验计划" otitle="用户体验计划" otype="button">用户体验计划</a></dd>
+				</dl>
+				<dl class="no_margin">
+					<dt class="four">移动平安网</dt>
+					<dd class="fm_t2"><a target="_blank" href="http://m.pingan.com/" title="http://m.pingan.com/" otitle="m.pingan.com" otype="button">m.pingan.com</a></dd>
+					<dd class="img_erwei"><img alt="erweima" src="http://img2.pingan.com/app_images/pingan/v20/one_v20/header/erweima.jpg" /></dd>
+				</dl>
+			</div>
+			<div class="c_l">
+				<ul>
+					<li class="li_1"></li>
+					<li class="li_2"></li>
+					<li class="li_3"><a target="_blank" href="http://www.pingan.com/homepage/contact/contact.jsp?ptag=1" title="服务热线 95511" otitle="服务热线" otype="button"></a></li>
+					<li class="li_4"><a target="_blank" href="#1" title="在线服务" otitle="在线服务" otype="button"></a></li>
+					<li class="li_5"><a target="_blank" href="http://www.pingan.com/homepage/contact/contact.jsp" title="服务网点" otitle="服务网点" otype="button"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--版权-->
+		<div class="copyright warpper">
+			<p>版权所有 &copy; 中国平安保险（集团）股份有限公司 未经许可不得复制、转载或摘编，违者必究!</p>
+			<p>Copyright &copy; PING AN INSURANCE (GROUP) COMPANY OF CHINA ,LTD. All Rights Reserved</p>
+			<p> <a target="_blank" rel="nofollow" href="http://www.sznet110.gov.cn/index.jsp"><img src="http://img2.pingan.com/app_images/pingan/v20/one_v20/header/icon_02.gif" alt="" width="16" height="23" border="0"></a> <a target="_blank" rel="nofollow" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=440310120110"><img src="http://img2.pingan.com/app_images/pingan/v20/one_v20/header/icon_01.gif" alt="" width="15" height="20" border="0"></a> ICP许可证号 粤ICP备06118290号 </p>
+		</div>
+	</div>
+</div>
+
+<div style="display:none"><img src="https://member.pingan.com.cn/pinganone/pa/app_images/keepSession.gif" width=1 height=1 /></div>
+<script type="text/javascript">
+	setTimeout('exesdcjs()',0);
+    function exesdcjs(){
+      var jDomain="www.pingan.com";
+      var js_path="/app_js/sdc/src/web.js";
+      var domain="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+jDomain;
+      var SDC_js=document.createElement("script");
+      SDC_js.src=domain+js_path;
+      var headElem=document.getElementsByTagName("head")[0];
+      headElem.appendChild(SDC_js);   
+     }
+    $(function(){
+    	var relogin = getCookie("relogin");
+    	if(relogin == "true") {
+	    	setCookie("relogin", "false");
+    		loginPop(true);
+    	}
+    });
+  	//创建cookie
+	function setCookie(name, value, second) {
+		if(second != -1){
+			var exp = new Date();
+			exp.setSeconds(exp.getSeconds() + second, 0);//设置cookie的期限
+			document.cookie = name + "=" + escape(value) + "; expires=" + exp.toUTCString() + "; path=/;domain=" + location.host.substring(location.host.indexOf(".pingan.com")); //创建cookie
+		} else {
+			document.cookie = name + "=" + escape(value) + "; path=/;domain=" + location.host.substring(location.host.indexOf(".pingan.com")); //创建cookie;//创建cookie
+		}
+	}
+	//提取cookie中的值
+	function getCookie(name) {
+	    var cookieStr = document.cookie;
+	    if(cookieStr.length > 0) {
+	        var cookieArr = cookieStr.split(";"); //将cookie信息转换成数组
+	        for (var i=0; i<cookieArr.length; i++) {
+	            var cookieVal = cookieArr[i].split("="); //将每一组cookie(cookie名和值)也转换成数组
+	            if(cookieVal[0].replace(/\s/,"") == name) {
+	                return unescape(cookieVal[1]); //返回需要提取的cookie值
+	            }
+	        }
+	    }
+	}
+</script>
+<script type="text/javascript">
+var sourceApi ="http://rongzi-cms.pingan.com/Fmall/Sourceapi/getSourceId.html";
+</script>
+<script type="text/javascript" src="https://script2.pingan.com/app_js/fmall2/operation.js?versionId="></script>
+</body>
+</html>
